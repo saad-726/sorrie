@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="floating-hearts">
+        <div class="heart">❤️</div>
+        <div class="heart">💖</div>
+        <div class="heart">💕</div>
+        <div class="heart">💗</div>
+        <div class="heart">💓</div>
+        <div class="heart">💘</div>
+        <div class="heart">💝</div>
+        <div class="heart">💟</div>
+        <div class="heart">❤️</div>
+        <div class="heart">💖</div>
+    </div>
+
+    <!-- Login Section -->
+    <div id="login-screen" class="container">
+        <h1>Who is this for?</h1>
+        <p>Enter your name to proceed...</p>
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="Enter name here..." autocomplete="off">
+            <button id="loginBtn">Enter 💖</button>
+        </div>
+        <p id="error-msg" class="hidden">Nope! Try again (Hint: churail) 😜</p>
+    </div>
+
+    <!-- Loading Section (Hidden initially) -->
+    <div id="loading-screen" class="container hidden">
+        <div class="heart-loader"></div>
+        <h2 class="loading-text">Loading a special msg... 💖</h2>
+        <p class="sub-text">Gathering the essence of love...</p>
+    </div>
+
+    <!-- Main Sorry Section (Hidden initially) -->
+    <div id="main-content" class="container hidden">
+        <h1 class="bounce">I'm So Sorry! 🥺</h1>
+        <p>I know I messed up, but you mean the world to me. Can you please forgive me?</p>
+
+        <div class="css-art-container">
+            <!-- Cute Sad Blob -->
+            <div class="blob sad-blob">
+                <div class="face">
+                    <div class="eye left">
+                        <div class="tear"></div>
+                    </div>
+                    <div class="eye right">
+                        <div class="tear"></div>
+                    </div>
+                    <div class="mouth"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="yesBtn">Yes, I forgive you 💖</button>
+            <button id="noBtn">No 😠</button>
+        </div>
+    </div>
+
+    <!-- Success Section (Hidden initially) -->
+    <div id="success-screen" class="container hidden">
+        <h1 class="bounce">YAYYY! 🎉</h1>
+        <p>I promise to be better! Love you loads! ❤️</p>
+        <div class="css-art-container">
+            <!-- Cute Happy Blob -->
+            <div class="blob happy-blob">
+                <div class="face">
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+                    <div class="mouth"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Disc (Fixed) -->
+    <div class="music-player">
+        <div class="disc">
+            <div class="disc-inner"></div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
