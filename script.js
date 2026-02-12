@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkName() {
         const name = nameInput.value.trim().toLowerCase();
 
-        if (name === 'churail') {
+        if (name === 'fav') {
             // Success - Move to Loading Screen first
             loginScreen.classList.add('fade-out');
 
